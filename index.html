@@ -1,29 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>HoloData Research Group</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HoloData Research Group</h1>
-  <p><strong>Advanced Computing Research Group — publications, projects, and internship opportunities.</strong></p>
+  <header class="splash-banner"></header>
+  <div class="terminal-divider"></div>
 
-  <h2>Mission</h2>
-  <p>Advancing practical and theoretical computing through independent research and open collaboration.</p>
+  <div class="title-banner">
+    <h1 class="terminal-title" data-text=" HoloData Research Group">&gt;</h1>
+    <h3 class="terminal-title" data-text=" Advanced Computing Research">&nbsp;</h3>
+  </div>
 
-  <h2>Current Projects</h2>
-  <ul>
-    <li>PDE‑derived Gaussian Process kernels</li>
-    <li>Vision Transformer benchmarking</li>
-    <li>MLOps deployment pipeline</li>
-    <li>RAG system evaluation</li>
-  </ul>
+  <nav class="contents-banner">
+    <a href="#welcome"><span class="contents-icon"><img class="default-icon" src="images/logo_notext_square_centered_transparent.png" alt=""><img class="amber-icon" src="images/logo_amber_notext_square_centered_transparent.png" alt=""></span>Welcome</a>
+    <a href="#mission"><span class="contents-icon"><img class="default-icon" src="images/logo_notext_square_centered_transparent.png" alt=""><img class="amber-icon" src="images/logo_amber_notext_square_centered_transparent.png" alt=""></span>Mission</a>
+    <a href="#projects"><span class="contents-icon"><img class="default-icon" src="images/logo_notext_square_centered_transparent.png" alt=""><img class="amber-icon" src="images/logo_amber_notext_square_centered_transparent.png" alt=""></span>Projects</a>
+    <a href="#publications"><span class="contents-icon"><img class="default-icon" src="images/logo_notext_square_centered_transparent.png" alt=""><img class="amber-icon" src="images/logo_amber_notext_square_centered_transparent.png" alt=""></span>Publications</a>
+    <a href="#internships"><span class="contents-icon"><img class="default-icon" src="images/logo_notext_square_centered_transparent.png" alt=""><img class="amber-icon" src="images/logo_amber_notext_square_centered_transparent.png" alt=""></span>Internships</a>
+    <a href="#team"><span class="contents-icon"><img class="default-icon" src="images/logo_notext_square_centered_transparent.png" alt=""><img class="amber-icon" src="images/logo_amber_notext_square_centered_transparent.png" alt=""></span>Team</a>
+  </nav>
 
-  <h2>Publications</h2>
-  <p>Coming soon — preprints and technical reports will be listed here.</p>
+  <main class="content-panels">
+  <section id="welcome" class="content-panel active">
+    <h2 class="section-title"><img src="images/logo_notext_square_centered_transparent.png" alt="">Welcome</h2>
+    <p>Explore the HoloData Research Group's mission, projects, publications, internships, and team.</p>
+    <div class="welcome-animation-stage">
+    </div>
+  </section>
 
-  <h2>Internships</h2>
-  <p>We host summer and term‑time research internships for BSc/MSc students. Project proposals and application details will be posted here.</p>
+  <section id="mission" class="content-panel">
+    <h2 class="section-title"><img src="images/logo_notext_square_centered_transparent.png" alt="">Mission</h2>
+    <p>
+      HoloData Research Group investigates the ideas, methods, and mathematical structures that shape
+      modern computing. Our work is centered on machine learning, deep learning, and quantum computing,
+      with a particular interest in the questions that sit beneath rapidly changing technologies: 
+      how useful representations are formed, why learning systems generalize, how mathematical structure
+      can guide model design, and where new computational paradigms may change what is possible. 
+    <p>
 
+    </p>
+      We approach these questions as a research group rather than as advocates for any single technique.
+      A model is not interesting simply because it is large, a method is not valuable simply because it
+      is new, and a quantum formulation is not meaningful simply because it uses the language of quantum
+      computing. We are interested in understanding the conditions under which an approach works, the 
+      assumptions on which it depends, and the ways in which it fails. Our research combines theoretical
+      investigation with careful experimentation. We develop and analyze algorithms, study the behavior
+      of learning systems, construct computational experiments, and compare methods through transparent
+      evaluation. This includes work on deep neural architectures, probabilistic models, scientific 
+      machine learning, optimization, representation learning, and emerging approaches to quantum 
+      information processing.
+    <p>
+
+    </p>
+      Where possible, we look for connections between fields: between differential equations and learned
+      models, between geometry and representation, between physical intuition and computation, or 
+      between classical and quantum approaches to inference and optimization. We value results that are
+      clear about their limitations as much as results that demonstrate strong performance. 
+      Reproducibility, well-defined questions, meaningful baselines, and honest interpretation are 
+      central to the way we work, because research advances through results that can be examined, 
+      repeated, extended, and disputed. HoloData supports independent study and research, as well as 
+      collaboration with researchers, students, and organizations whose problems raise genuinely 
+      interesting technical questions. Engagement with the wider research community helps us test our 
+      assumptions and keeps our work connected to important problems beyond a single project. 
+    <p>
+
+
+    </p>
+      Our aim is to contribute thoughtful, rigorous work to advanced computing: work that clarifies 
+      difficult ideas, explores promising directions without unnecessary hype, and builds a stronger 
+      understanding of how intelligent and unconventional computational systems can be designed, 
+      analyzed, and understood.
+    </p>
+  </section>
+
+  <section id="projects" class="content-panel">
+    <h2 class="section-title"><img src="images/logo_notext_square_centered_transparent.png" alt="">Current Projects</h2>
+    <h3>PDE-derived Gaussian Process kernels</h3>
+    <p>
+      This project investigates how partial differential equations can be used to construct and
+      understand kernels for Gaussian process models. The aim is to connect the flexibility of
+      probabilistic learning with the structure provided by known scientific or physical systems.
+    </p>
+    <ul>
+      <li>Deriving kernels from differential operators and boundary conditions.</li>
+      <li>Studying how prior structure affects predictions and uncertainty.</li>
+      <li>Comparing PDE-informed kernels with standard Gaussian process approaches.</li>
+    </ul>
+
+    <h3>Vision Transformer benchmarking</h3>
+    <p>
+      This project evaluates vision transformers across controlled tasks and datasets, with a
+      focus on understanding when their attention-based architecture provides a meaningful
+      advantage over more established computer vision models.
+    </p>
+    <ul>
+      <li>Comparing performance across datasets, model sizes, and training conditions.</li>
+      <li>Measuring accuracy, computational cost, data requirements, and robustness.</li>
+      <li>Examining how architectural and training choices affect the results.</li>
+    </ul>
+  </section>
+
+  <section id="publications" class="content-panel">
+    <h2 class="section-title"><img src="images/logo_notext_square_centered_transparent.png" alt="">Publications</h2>
+    <p>Coming soon: preprints and technical reports will be listed here.</p>
+  </section>
+
+  <section id="internships" class="content-panel">
+    <h2 class="section-title"><img src="images/logo_notext_square_centered_transparent.png" alt="">Internships</h2>
+    <p>
+      We host summer and term-time research internships for BSc/MSc students. Project proposals and 
+      application details will be posted here as they become available.
+    </p>
+  </section>
+
+  <section id="team" class="content-panel">
+    <h2 class="section-title"><img src="images/logo_notext_square_centered_transparent.png" alt="">Team</h2>
+    <p>Currently led by independent researchers. Collaborators and interns will be listed here.</p>
+  </section>
+  </main>
+
+  <footer>
+    <p>&copy; HoloData&trade;</p>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>
